@@ -84,31 +84,21 @@ setInterval(countElapsedTime, 1000); // update time every second
 // import JSONmsgs from './JSON/bulletin.json' assert {type: 'json'};
 // const msgs = JSON.parse(JSONmsgs);
 
-// AJAX ANROP
-// let http = new XMLHttpRequest();
-// http.open('get', 'bulletin.json', true)
-// http.send();
-// http.onload = function(){
-//   if(this.readyState == 4 && this.status == 200){
-//     let messages = JSON.parse(this.responseText);
 //     let tmp = "";
-//   }
-//   for(let m of messages){
-//     output += `
-//     <div class="bulletin__content swiper-slide">
-//     <p class="bulletin__description">
-//         ${m.message}
-//     </p>
-    
-//     <div>   
-//         <h3 class="bulletin__name">${m.name}</h3>
-//         <span class="subtitle">${m.label}</span>
-//     </div>
-// </div>
-//     `;
-//   }
-//   document.querySelector(".swiper-wrapper").innerHTML = output;
-// }
+//     for(let m of msgs){
+//       let slide = `
+//       <div class="bulletin__content swiper-slide">
+//       <p class="bulletin__description">
+//           ${m.message}
+//       </p>
+      
+//       <div>   
+//           <h3 class="bulletin__name">${m.name}</h3>
+//           <span class="subtitle">${m.label}</span>
+//       </div>
+//       </div>
+//       `;}
+//   document.querySelector("swiper-wrapper").innerHTML += slide;
 
 /*=============== EMAIL JS ===============*/
 const contactForm = document.getElementById('contact-form'),

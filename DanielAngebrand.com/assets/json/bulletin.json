@@ -1,0 +1,19 @@
+{
+    "messages": [
+        {
+            "name": "Johanna Lannerstedt",
+            "label": "Classmate",
+            "message": "Daniel was so great to study with during our C# .Net Fullstack accelerated learning course with Brights. Curious, humble and fun, Daniel really played a significant part in bringing the class together and creating a great space for learning, with and from eachother."
+        },
+        {
+            "name": "Daniel Angebrand",
+            "label": "Classmate",
+            "message": "Test"
+        },
+        {
+            "name": "Daniel Angebrand",
+            "label": "Classmate",
+            "message": "Test2"
+        }
+    ]
+}
