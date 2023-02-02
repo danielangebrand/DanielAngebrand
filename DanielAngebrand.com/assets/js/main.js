@@ -138,7 +138,7 @@ const sendEmail = (e) =>{
 contactForm.addEventListener('submit', sendEmail)
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
-const sections = document.getElementById('section[id]')
+const sections = document.querySelectorAll('section[id]')
 
 const scrollActive = () =>{
   const scrollY = window.pageYOffset
@@ -150,9 +150,9 @@ const scrollActive = () =>{
     sectionClass = document.querySelector('.nav__menu a[href*=' + sectionId + ']')
   
   if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-    sectionsClass.classList.add('active-link')
+    sectionClass.classList.add('active-link')
   }else{
-    sectionsClass.classList.remove('active-link')
+    sectionClass.classList.remove('active-link')
   }
   })
 }
@@ -193,9 +193,6 @@ themeButton.addEventListener('click', () => {
 /*=============== CHANGE BACKGROUND HEADER ===============*/
 const scrollHeader = () =>{
   const header = document.getElementById('header')
-
-  // this.scrollY >= 50 ? header.classList.add('bg-header')
-  // : header.classList.remove('bg-header')
   this.scrollY >= 50 ? header.classList.add('bg-header')
   : header.classList.remove('bg-header')
 }
@@ -213,4 +210,5 @@ sr.reveal(`.home__data, .projects__container, .bulletin__container, .footer__con
 sr.reveal(`.home__info div`), {delay: 600, origin: 'bottom', interval: 100}
 sr.reveal(`.skills__content:nth-child(1), .contact__content:nth-child(1)`), {origin: 'left'}
 sr.reveal(`.skills__content:nth-child(2), .contact__content:nth-child(2)`), {origin: 'right'}
+sr.reveal(`.skills__content:nth-child(3), .contact__content:nth-child(3)`), {origin: 'under'}
 sr.reveal(`.qualification__content`, {interval: 100})
