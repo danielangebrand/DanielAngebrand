@@ -47,6 +47,7 @@ let swiperProjects = new Swiper(".projects__container", {
 /*=============== SWIPER BULLETIN ===============*/
 
 let swiperBulletin = new Swiper(".bulletin__container", {
+    loop: true,
     grabCursor: true,
 
     navigation: {
@@ -54,8 +55,6 @@ let swiperBulletin = new Swiper(".bulletin__container", {
     prevEl: ".swiper-button-prev",
     },
 });
-
-//
 
 // elapsed time - must be an easier way to do this? lol..
 const start = new Date('2022-10-02T09:00:00');
